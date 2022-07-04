@@ -33,11 +33,11 @@ export default function ProductHero() {
         Over 20 Years of Interior Design
       </Typography>
       <Button
-        color="secondary"
+        color="primary"
         variant="contained"
         size="large"
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        href="#contact"
         sx={{ minWidth: 200 }}
       >
         Reach Out

@@ -9,13 +9,13 @@ export default function CWDAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="static"
-        enableColorOnDark="true"
         color="primary"
         sx={{ height: '8rem', justifyContent: 'center' }}
       >
         <Toolbar>
           <Typography
             variant="h1"
+            className="creativeWallh1"
             component="div"
             sx={{ flexGrow: 1, textAlign: 'center', color: 'white' }}
           >

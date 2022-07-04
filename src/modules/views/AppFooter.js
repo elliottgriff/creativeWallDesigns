@@ -4,7 +4,6 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { NoEncryption } from '@mui/icons-material';
 
 function Copyright() {
   return (
@@ -33,7 +32,7 @@ export default function AppFooter() {
   return (
     <Typography
       component="footer"
-      sx={{ display: 'flex', bgcolor: 'secondary.light' }}
+      sx={{ display: 'flex', bgcolor: 'secondary.light', marginTop: 8 }}
     >
       <Container sx={{ my: 8, display: 'inline' }}>
         <div>
