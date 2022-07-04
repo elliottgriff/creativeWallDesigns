@@ -66,12 +66,11 @@ const theme = {
     },
     h2: {
       ...rawTheme.typography.h2,
-      ...fontHeader,
+      textTransform: 'uppercase',
       fontSize: 48,
     },
     h3: {
       ...rawTheme.typography.h3,
-      ...fontHeader,
       fontSize: 42,
     },
     h4: {
@@ -86,7 +85,7 @@ const theme = {
     },
     h6: {
       ...rawTheme.typography.h6,
-      ...fontHeader,
+      textTransform: 'uppercase',
       fontSize: 18,
     },
     subtitle1: {
