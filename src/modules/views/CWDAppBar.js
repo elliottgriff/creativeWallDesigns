@@ -7,12 +7,17 @@ import Typography from '@mui/material/Typography';
 export default function CWDAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        enableColorOnDark="true"
+        color="primary"
+        sx={{ height: '8rem', justifyContent: 'center' }}
+      >
         <Toolbar>
           <Typography
             variant="h1"
             component="div"
-            sx={{ flexGrow: 1, textAlign: 'center' }}
+            sx={{ flexGrow: 1, textAlign: 'center', color: 'white' }}
           >
             Creative Wall Designs
           </Typography>
