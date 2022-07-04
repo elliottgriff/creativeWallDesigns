@@ -62,6 +62,7 @@ const theme = {
       ...fontHeader,
       letterSpacing: 0,
       fontSize: 60,
+      textTransform: 'none',
     },
     h2: {
       ...rawTheme.typography.h2,
