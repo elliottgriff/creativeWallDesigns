@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { green, grey, red } from '@mui/material/colors';
 
 const rawTheme = createTheme({
@@ -54,6 +54,7 @@ const theme = {
       placeholder: grey[200],
     },
   },
+
   typography: {
     ...rawTheme.typography,
     fontHeader,
