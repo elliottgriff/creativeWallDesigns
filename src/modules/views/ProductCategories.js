@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-import dad from './imgs/dad.jpg';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',

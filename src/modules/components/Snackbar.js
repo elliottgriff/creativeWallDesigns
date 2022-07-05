@@ -4,8 +4,7 @@ import { styled } from '@mui/material/styles';
 import MuiSnackbar from '@mui/material/Snackbar';
 import { snackbarContentClasses } from '@mui/material/SnackbarContent';
 import Slide from '@mui/material/Slide';
-// import CloseIcon from '@mui/icons-material/Close';
-// import InfoIcon from '@mui/icons-material/Info';
+import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
 
 const styles = ({ theme }) => ({
@@ -14,8 +13,8 @@ const styles = ({ theme }) => ({
     color: theme.palette.text.primary,
     flexWrap: 'inherit',
     [theme.breakpoints.up('md')]: {
-      borderTopLeftRadius: 0,
-      borderTopRightRadius: 0,
+      borderTopLeftRadius: 4,
+      borderTopRightRadius: 4,
       borderBottomRightRadius: 4,
       borderBottomLeftRadius: 4,
     },
@@ -55,7 +54,6 @@ function Snackbar(props) {
       TransitionComponent={Transition}
       message={
         <React.Fragment>
-          {/* <InfoIcon className={classes.info} /> */}
           <span>{message}</span>
         </React.Fragment>
       }
@@ -67,7 +65,7 @@ function Snackbar(props) {
           className={classes.close}
           onClick={() => closeFunc && closeFunc()}
         >
-          {/* <CloseIcon /> */}
+          <CloseIcon />
         </IconButton>,
       ]}
       {...other}

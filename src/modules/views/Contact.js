@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useRef } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
@@ -6,13 +7,25 @@ import Typography from '../components/Typography';
 import TextField from '../components/TextField';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
+import emailjs from 'emailjs-com';
+import kitchenContact from './imgs/kitchenContact.jpeg';
 
-function ProductCTA() {
+function Contact() {
+  const form = useRef();
   const [open, setOpen] = React.useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setOpen(true);
+
+    emailjs.sendForm(
+      'service_0znpeoq',
+      'template_l7rug2j',
+      form.current,
+      'D3Z2xi7rCQisabcxd'
+    );
+
+    event.target.reset();
   };
 
   const handleClose = () => {
@@ -21,7 +34,7 @@ function ProductCTA() {
 
   return (
     <section id="contact">
-      <Container component="section" sx={{ mt: 10, display: 'flex' }}>
+      <Container component="section" sx={{ py: 10, display: 'flex' }}>
         <Grid container>
           <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
             <Box
@@ -29,34 +42,58 @@ function ProductCTA() {
                 display: 'flex',
                 justifyContent: 'center',
                 bgcolor: 'warning.main',
-                py: 8,
+                py: 6,
                 px: 3,
               }}
             >
               <Box
+                ref={form}
                 component="form"
                 onSubmit={handleSubmit}
                 sx={{ maxWidth: 400 }}
               >
-                <Typography variant="h2" component="h2" gutterBottom>
-                  Receive offers
+                <Typography
+                  variant="h2"
+                  component="h2"
+                  gutterBottom
+                  sx={{ textAlign: 'center' }}
+                >
+                  Get in Touch
                 </Typography>
-                <Typography variant="h5">
-                  Taste the holidays of the everyday close to home.
+                <Typography variant="h5" sx={{ textAlign: 'center' }}>
+                  Send us a Message!
                 </Typography>
                 <TextField
                   noBorder
-                  placeholder="Your email"
+                  placeholder="Your Name"
                   variant="standard"
+                  required
                   sx={{ width: '100%', mt: 3, mb: 2 }}
+                />
+                <TextField
+                  noBorder
+                  placeholder="Email"
+                  variant="standard"
+                  type="email"
+                  required
+                  sx={{ width: '100%', mt: 1, mb: 2 }}
+                />
+                <TextField
+                  noBorder
+                  multiline
+                  required
+                  maxRows={4}
+                  placeholder="Message"
+                  variant="standard"
+                  sx={{ width: '100%', mt: 1, mb: 2 }}
                 />
                 <Button
                   type="submit"
                   color="primary"
                   variant="contained"
-                  sx={{ width: '100%' }}
+                  sx={{ width: '100%', borderRadius: '5px' }}
                 >
-                  Keep me updated
+                  Send
                 </Button>
               </Box>
             </Box>
@@ -68,20 +105,8 @@ function ProductCTA() {
             sx={{ display: { md: 'block', xs: 'none' }, position: 'relative' }}
           >
             <Box
-              sx={{
-                position: 'absolute',
-                top: -67,
-                left: -67,
-                right: 0,
-                bottom: 0,
-                width: '100%',
-                background:
-                  'url(/static/themes/onepirate/productCTAImageDots.png)',
-              }}
-            />
-            <Box
               component="img"
-              src="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750"
+              src={kitchenContact}
               alt="call to action"
               sx={{
                 position: 'absolute',
@@ -98,11 +123,11 @@ function ProductCTA() {
         <Snackbar
           open={open}
           closeFunc={handleClose}
-          message="We will send you our best offers, once a week."
+          message="Thanks! We will get back to you soon."
         />
       </Container>
     </section>
   );
 }
 
-export default ProductCTA;
+export default Contact;

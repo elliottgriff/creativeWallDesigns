@@ -4,7 +4,7 @@ import AppFooter from './modules/views/AppFooter';
 import ProductHero from './modules/views/ProductHero';
 import ProductValues from './modules/views/ProductValues';
 import ProductHowItWorks from './modules/views/ProductHowItWorks';
-import ProductCTA from './modules/views/ProductCTA';
+import Contact from './modules/views/Contact';
 import CWDAppBar from './modules/views/CWDAppBar';
 import withRoot from './modules/withRoot';
 
@@ -16,7 +16,7 @@ function Index() {
       <ProductValues />
       <ProductCategories />
       <ProductHowItWorks />
-      <ProductCTA />
+      <Contact />
       <AppFooter />
     </React.Fragment>
   );
