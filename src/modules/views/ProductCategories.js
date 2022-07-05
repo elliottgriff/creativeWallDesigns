@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import dad from './imgs/dad.jpg';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -55,48 +56,48 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const images = [
   {
-    url: 'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400',
-    title: 'Snorkeling',
+    url: 'https://production-next-images-cdn.thumbtack.com/i/394198127826427904/width/1024.webp',
+    title: 'Wallpaper',
     width: '40%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400',
-    title: 'Massage',
+    url: 'https://production-next-images-cdn.thumbtack.com/i/405817683863928840/width/1024.webp',
+    title: 'Kitchen',
     width: '20%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400',
-    title: 'Hiking',
+    url: 'https://production-next-images-cdn.thumbtack.com/i/405817684301725702/width/1024.webp',
+    title: 'Granite',
     width: '40%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1453747063559-36695c8771bd?auto=format&fit=crop&w=400',
-    title: 'Tour',
+    url: 'https://production-next-images-cdn.thumbtack.com/i/353289184859267092/width/1024.webp',
+    title: 'Bedroom',
     width: '38%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1523309996740-d5315f9cc28b?auto=format&fit=crop&w=400',
-    title: 'Gastronomy',
+    url: 'https://production-next-images-cdn.thumbtack.com/i/333404451881361532/width/1920.webp',
+    title: 'Lighting',
     width: '38%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400',
-    title: 'Shopping',
+    url: 'https://production-next-images-cdn.thumbtack.com/i/352349425107804182/width/1024.webp',
+    title: 'Design',
     width: '24%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400',
-    title: 'Walking',
+    url: 'https://production-next-images-cdn.thumbtack.com/i/394198127688007680/width/1024.webp',
+    title: 'Experience',
     width: '40%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400',
-    title: 'Fitness',
+    url: 'https://production-next-images-cdn.thumbtack.com/i/389368584988213260/width/1920.webp',
+    title: 'Carpet',
     width: '20%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400',
-    title: 'Reading',
+    url: 'https://production-next-images-cdn.thumbtack.com/i/389368584291729411/width/1920.webp',
+    title: 'Decorate',
     width: '40%',
   },
 ];

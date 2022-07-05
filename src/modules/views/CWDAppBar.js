@@ -3,14 +3,13 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import { Link } from '@mui/material';
-import './CWDAppBar.module.css';
 
 export default function CWDAppBar() {
   return (
     <AppBar
       position="fixed"
       color="primary"
-      sx={{ height: '4rem', justifyContent: 'center' }}
+      sx={{ height: '3rem', justifyContent: 'center' }}
     >
       <Toolbar sx={{ justifyContent: 'center' }}>
         <Box>
@@ -18,9 +17,14 @@ export default function CWDAppBar() {
             variant="h6"
             underline="none"
             href="#home"
-            sx={{ flexGrow: 1, textAlign: 'center', color: 'white' }}
+            sx={{
+              flexGrow: 1,
+              textAlign: 'center',
+              color: 'white',
+              fontFamily: "'Raleway', sans-serif",
+            }}
           >
-            Creative Wall Designs
+            CWD
           </Link>
         </Box>
       </Toolbar>

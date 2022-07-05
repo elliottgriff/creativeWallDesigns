@@ -8,11 +8,11 @@ const backgroundImage =
 
 export default function ProductHero() {
   return (
-    <section id="home" style={{ paddingTop: '4rem' }}>
+    <section id="home">
       <ProductHeroLayout
         sxBackground={{
           backgroundImage: `url(${backgroundImage})`,
-          backgroundColor: '#7fc7d9', // Average color of the background image.
+          backgroundColor: '#7fc7d9',
           backgroundPosition: 'center',
         }}
       >
@@ -21,8 +21,14 @@ export default function ProductHero() {
           src={backgroundImage}
           alt="increase priority"
         />
-        <Typography color="inherit" align="center" variant="h2" marked="center">
-          Upgrade your Home
+        <Typography
+          sx={{ paddingTop: '6rem', fontSize: '70px' }}
+          color="inherit"
+          align="center"
+          variant="h2"
+          marked="center"
+        >
+          Creative Wall Designs
         </Typography>
         <Typography
           color="inherit"
@@ -30,7 +36,7 @@ export default function ProductHero() {
           variant="h5"
           sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
         >
-          Over 20 Years of Interior Design
+          Over 20 Years of Interior Design Expertise
         </Typography>
         <Button
           color="primary"
@@ -38,7 +44,7 @@ export default function ProductHero() {
           size="large"
           component="a"
           href="#contact"
-          sx={{ minWidth: 200 }}
+          sx={{ minWidth: 200, color: 'white', borderRadius: '5px' }}
         >
           Reach Out
         </Button>
