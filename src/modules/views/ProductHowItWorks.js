@@ -1,10 +1,9 @@
 import * as React from 'react';
-
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Button from '../components/Button';
 import Typography from '../components/Typography';
+import ModalImage from 'react-modal-image';
 
 const item = {
   display: 'flex',
@@ -21,7 +20,7 @@ const number = {
 };
 
 const image = {
-  height: 55,
+  height: '20rem',
   my: 4,
 };
 
@@ -33,27 +32,16 @@ function ProductHowItWorks() {
     >
       <Container
         sx={{
-          mt: 10,
-          mb: 15,
+          mt: 5,
+          mb: 10,
           position: 'relative',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
         }}
       >
-        <Box
-          component="img"
-          src="/static/themes/onepirate/productCurvyLines.png"
-          alt="curvy lines"
-          sx={{
-            pointerEvents: 'none',
-            position: 'absolute',
-            top: -180,
-            opacity: 0.7,
-          }}
-        />
-        <Typography variant="h4" marked="center" component="h2" sx={{ mb: 14 }}>
-          How it works
+        <Typography variant="h4" marked="center" component="h2" sx={{ mb: 5 }}>
+          How We Work
         </Typography>
         <div>
           <Grid container spacing={5}>
@@ -62,12 +50,12 @@ function ProductHowItWorks() {
                 <Box sx={number}>1.</Box>
                 <Box
                   component="img"
-                  src="/static/themes/onepirate/productHowItWorks1.svg"
+                  src="https://production-next-images-cdn.thumbtack.com/i/394198127688007680/width/1024.webp"
                   alt="suitcase"
                   sx={image}
                 />
                 <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
+                  Meet with Clients
                 </Typography>
               </Box>
             </Grid>
@@ -76,13 +64,12 @@ function ProductHowItWorks() {
                 <Box sx={number}>2.</Box>
                 <Box
                   component="img"
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
+                  src="https://production-next-images-cdn.thumbtack.com/i/394198127688007680/width/1024.webp"
                   alt="graph"
                   sx={image}
                 />
                 <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited
-                  quantities, so be quick.
+                  Choose a Design Gameplan
                 </Typography>
               </Box>
             </Grid>
@@ -91,13 +78,12 @@ function ProductHowItWorks() {
                 <Box sx={number}>3.</Box>
                 <Box
                   component="img"
-                  src="/static/themes/onepirate/productHowItWorks3.svg"
+                  src="https://production-next-images-cdn.thumbtack.com/i/394198127688007680/width/1024.webp"
                   alt="clock"
                   sx={image}
                 />
                 <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
+                  Implement our Design!
                 </Typography>
               </Box>
             </Grid>

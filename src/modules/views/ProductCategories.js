@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import ModalImage from 'react-modal-image';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -81,12 +82,12 @@ const images = [
   },
   {
     url: 'https://production-next-images-cdn.thumbtack.com/i/352349425107804182/width/1024.webp',
-    title: 'Design',
+    title: 'Decorating',
     width: '24%',
   },
   {
-    url: 'https://production-next-images-cdn.thumbtack.com/i/394198127688007680/width/1024.webp',
-    title: 'Experience',
+    url: 'https://production-next-images-cdn.thumbtack.com/i/361991502914682884/width/1920.webp',
+    title: 'Remodeling',
     width: '40%',
   },
   {
@@ -96,20 +97,33 @@ const images = [
   },
   {
     url: 'https://production-next-images-cdn.thumbtack.com/i/389368584291729411/width/1920.webp',
-    title: 'Decorate',
+    title: 'Design',
     width: '40%',
   },
 ];
 
 export default function ProductCategories() {
+  const ShowModal = (props) => {
+    return <ModalImage small={props.img} large={props.img} alt={props.title} />;
+  };
+
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
       <Typography variant="h4" marked="center" align="center" component="h2">
-        For all tastes and all desires
+        For all your Decorating Needs
       </Typography>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (
           <ImageIconButton
+            onClick={() => {
+              return (
+                <ModalImage
+                  small={image.url}
+                  large={image.url}
+                  alt={image.title}
+                />
+              );
+            }}
             key={image.title}
             style={{
               width: image.width,
