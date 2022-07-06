@@ -4,6 +4,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import kitchen from './imgs/kitchen.jpeg';
+import tile from './imgs/tile.jpeg';
+import couch from './imgs/couch.webp';
 
 const item = {
   display: 'flex',
@@ -30,9 +33,9 @@ function ProductValues() {
             <Box sx={item}>
               <Box
                 component="img"
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
-                sx={{ height: 55 }}
+                src={couch}
+                alt="couch"
+                sx={{ height: 300 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
                 The best luxury hotels
@@ -50,12 +53,7 @@ function ProductValues() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
-                sx={{ height: 55 }}
-              />
+              <Box component="img" src={tile} alt="tile" sx={{ height: 300 }} />
               <Typography variant="h6" sx={{ my: 5 }}>
                 New experiences
               </Typography>
@@ -72,9 +70,9 @@ function ProductValues() {
             <Box sx={item}>
               <Box
                 component="img"
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
-                sx={{ height: 55 }}
+                src={kitchen}
+                alt="kitchen"
+                sx={{ height: 300 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
                 Exclusive rates

@@ -119,18 +119,6 @@ function BasicModal(props) {
     },
   });
 
-  const styles = (theme) => ({
-    root: {
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      width: '35%',
-      bgcolor: 'background.paper',
-      boxShadow: 24,
-    },
-  });
-
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);

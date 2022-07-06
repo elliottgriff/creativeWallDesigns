@@ -3,7 +3,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import val from './imgs/val.jpeg';
+import stripes from './imgs/stripes.webp';
+import ladder from './imgs/ladder.webp';
 
 const item = {
   display: 'flex',
@@ -48,12 +50,7 @@ function ProductHowItWorks() {
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>1.</Box>
-                <Box
-                  component="img"
-                  src="https://production-next-images-cdn.thumbtack.com/i/394198127688007680/width/1024.webp"
-                  alt="suitcase"
-                  sx={image}
-                />
+                <Box component="img" src={val} alt="val" sx={image} />
                 <Typography variant="h5" align="center">
                   Meet with Clients
                 </Typography>
@@ -62,12 +59,7 @@ function ProductHowItWorks() {
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>2.</Box>
-                <Box
-                  component="img"
-                  src="https://production-next-images-cdn.thumbtack.com/i/394198127688007680/width/1024.webp"
-                  alt="graph"
-                  sx={image}
-                />
+                <Box component="img" src={stripes} alt="stripes" sx={image} />
                 <Typography variant="h5" align="center">
                   Choose a Design Gameplan
                 </Typography>
@@ -76,12 +68,7 @@ function ProductHowItWorks() {
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>3.</Box>
-                <Box
-                  component="img"
-                  src="https://production-next-images-cdn.thumbtack.com/i/394198127688007680/width/1024.webp"
-                  alt="clock"
-                  sx={image}
-                />
+                <Box component="img" src={ladder} alt="ladder" sx={image} />
                 <Typography variant="h5" align="center">
                   Implement our Design!
                 </Typography>
