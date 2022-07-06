@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-import ModalImage from 'react-modal-image';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const item = {
   display: 'flex',
