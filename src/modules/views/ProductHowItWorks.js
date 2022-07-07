@@ -52,7 +52,7 @@ function ProductHowItWorks() {
                 <Box sx={number}>1.</Box>
                 <Box component="img" src={val} alt="val" sx={image} />
                 <Typography variant="h5" align="center">
-                  Meet with Clients
+                  Free Initial Consultation
                 </Typography>
               </Box>
             </Grid>
@@ -70,7 +70,7 @@ function ProductHowItWorks() {
                 <Box sx={number}>3.</Box>
                 <Box component="img" src={ladder} alt="ladder" sx={image} />
                 <Typography variant="h5" align="center">
-                  Implement our Design!
+                  Decorate!
                 </Typography>
               </Box>
             </Grid>

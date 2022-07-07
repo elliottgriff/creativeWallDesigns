@@ -19,8 +19,8 @@ function Contact() {
     setOpen(true);
 
     emailjs.sendForm(
-      'service_0znpeoq',
-      'template_l7rug2j',
+      'service_0hmd2yu',
+      'template_47amhwc',
       form.current,
       'D3Z2xi7rCQisabcxd'
     );
@@ -64,6 +64,7 @@ function Contact() {
                   Send us a Message!
                 </Typography>
                 <TextField
+                  name="name"
                   noBorder
                   placeholder="Your Name"
                   variant="standard"
@@ -71,6 +72,7 @@ function Contact() {
                   sx={{ width: '100%', mt: 3, mb: 2 }}
                 />
                 <TextField
+                  name="email"
                   noBorder
                   placeholder="Email"
                   variant="standard"
@@ -79,6 +81,7 @@ function Contact() {
                   sx={{ width: '100%', mt: 1, mb: 2 }}
                 />
                 <TextField
+                  name="message"
                   noBorder
                   multiline
                   required

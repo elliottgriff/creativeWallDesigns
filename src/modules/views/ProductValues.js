@@ -38,16 +38,12 @@ function ProductValues() {
                 sx={{ height: 300 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                The best luxury hotels
+                30+ Years of Experience
               </Typography>
               <Typography variant="h5">
-                {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
-                }
+                {'We know what it takes to make your home beautiful,'}
 
-                {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
-                }
+                {' and we guarentee your satisfaction.'}
               </Typography>
             </Box>
           </Grid>
@@ -55,14 +51,11 @@ function ProductValues() {
             <Box sx={item}>
               <Box component="img" src={tile} alt="tile" sx={{ height: 300 }} />
               <Typography variant="h6" sx={{ my: 5 }}>
-                New experiences
+                Sophisticated Design
               </Typography>
               <Typography variant="h5">
-                {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
-                }
-
-                {'your Sundays will not be alike.'}
+                {'Bringing your ideas to life is our passion.'}
+                {' Let us help create your dream home.'}
               </Typography>
             </Box>
           </Grid>
@@ -75,11 +68,11 @@ function ProductValues() {
                 sx={{ height: 300 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                Exclusive rates
+                Fair Pricing
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {'We believe in delivering the best possible service'}
+                {' for every budget.'}
               </Typography>
             </Box>
           </Grid>

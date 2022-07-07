@@ -36,7 +36,7 @@ export default function ProductHero() {
           variant="h5"
           sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
         >
-          Over 20 Years of Interior Design Expertise
+          Over 30 Years of Interior Decorating
         </Typography>
         <Button
           color="primary"
