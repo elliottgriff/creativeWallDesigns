@@ -17,7 +17,7 @@ const item = {
 const number = {
   fontSize: 24,
   fontFamily: 'default',
-  color: 'secondary.main',
+  color: 'primary.main',
   fontWeight: 'medium',
 };
 
@@ -26,11 +26,11 @@ const image = {
   my: 4,
 };
 
-function ProductHowItWorks() {
+function Process() {
   return (
     <Box
       component="section"
-      sx={{ display: 'flex', bgcolor: 'secondary.light', overflow: 'hidden' }}
+      sx={{ display: 'flex', backgroundColor: 'white', overflow: 'hidden' }}
     >
       <Container
         sx={{
@@ -42,7 +42,12 @@ function ProductHowItWorks() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4" marked="center" component="h2" sx={{ mb: 5 }}>
+        <Typography
+          variant="h4"
+          marked="center"
+          component="h2"
+          sx={{ mb: 5, color: 'primary.main' }}
+        >
           How We Work
         </Typography>
         <div>
@@ -81,4 +86,4 @@ function ProductHowItWorks() {
   );
 }
 
-export default ProductHowItWorks;
+export default Process;

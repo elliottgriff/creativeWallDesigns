@@ -1,21 +1,23 @@
 import * as React from 'react';
-import ProductCategories from './modules/views/ProductCategories';
+import ImageBoxes from './modules/views/ImageBoxes';
 import AppFooter from './modules/views/AppFooter';
 import ProductHero from './modules/views/ProductHero';
-import ProductValues from './modules/views/ProductValues';
-import ProductHowItWorks from './modules/views/ProductHowItWorks';
+import AboutUs from './modules/views/AboutUs';
+import Process from './modules/views/Process';
 import Contact from './modules/views/Contact';
 import CWDAppBar from './modules/views/CWDAppBar';
 import withRoot from './modules/withRoot';
+import Testimonials from './modules/views/Testimonials';
 
 function Index() {
   return (
     <React.Fragment>
       <CWDAppBar />
       <ProductHero />
-      <ProductValues />
-      <ProductCategories />
-      <ProductHowItWorks />
+      <AboutUs />
+      <ImageBoxes />
+      <Process />
+      <Testimonials />
       <Contact />
       <AppFooter />
     </React.Fragment>

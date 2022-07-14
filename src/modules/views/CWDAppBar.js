@@ -8,8 +8,10 @@ export default function CWDAppBar() {
   return (
     <AppBar
       position="fixed"
-      color="primary"
-      sx={{ height: '3rem', justifyContent: 'center' }}
+      sx={{
+        height: '4rem',
+        justifyContent: 'center',
+      }}
     >
       <Toolbar sx={{ justifyContent: 'center' }}>
         <Box>
@@ -22,6 +24,9 @@ export default function CWDAppBar() {
               textAlign: 'center',
               color: 'white',
               fontFamily: "'Raleway', sans-serif",
+              '&:hover': {
+                color: 'pink',
+              },
             }}
           >
             CWD

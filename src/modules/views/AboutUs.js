@@ -19,9 +19,9 @@ function ProductValues() {
   return (
     <Box
       component="section"
-      sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'secondary.light' }}
+      sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'white' }}
     >
-      <Container sx={{ mt: 15, mb: 30, display: 'flex', position: 'relative' }}>
+      <Container sx={{ mt: 10, mb: 5, display: 'flex', position: 'relative' }}>
         <Box
           component="img"
           src="/static/themes/onepirate/productCurvyLines.png"

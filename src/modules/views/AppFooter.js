@@ -23,8 +23,9 @@ const iconStyle = {
   justifyContent: 'center',
   alignItems: 'center',
   mr: 1,
+  color: 'primary.main',
   '&:hover': {
-    color: 'warning.dark',
+    color: 'primary.main',
   },
 };
 
@@ -32,7 +33,7 @@ export default function AppFooter() {
   return (
     <Typography
       component="footer"
-      sx={{ display: 'flex', bgcolor: 'secondary.light', marginTop: 8 }}
+      sx={{ display: 'flex', bgcolor: 'primary.light', marginTop: 8 }}
     >
       <Container sx={{ my: 8, display: 'inline' }}>
         <div>

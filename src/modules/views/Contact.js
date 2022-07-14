@@ -41,7 +41,7 @@ function Contact() {
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                bgcolor: 'warning.main',
+                bgcolor: 'primary.main',
                 py: 6,
                 px: 3,
               }}
@@ -92,9 +92,17 @@ function Contact() {
                 />
                 <Button
                   type="submit"
-                  color="primary"
                   variant="contained"
-                  sx={{ width: '100%', borderRadius: '5px' }}
+                  sx={{
+                    width: '100%',
+                    borderRadius: '5px',
+                    backgroundColor: 'primary.light',
+                    color: 'white',
+                    '&:hover': {
+                      backgroundColor: 'primary.light',
+                      color: 'primary.main',
+                    },
+                  }}
                 >
                   Send
                 </Button>

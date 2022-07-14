@@ -12,7 +12,6 @@ export default function ProductHero() {
       <ProductHeroLayout
         sxBackground={{
           backgroundImage: `url(${backgroundImage})`,
-          backgroundColor: '#7fc7d9',
           backgroundPosition: 'center',
         }}
       >
@@ -44,7 +43,15 @@ export default function ProductHero() {
           size="large"
           component="a"
           href="#contact"
-          sx={{ minWidth: 200, color: 'white', borderRadius: '5px' }}
+          sx={{
+            minWidth: 200,
+            color: 'white',
+            borderRadius: '5px',
+            '&:hover': {
+              backgroundColor: 'primary.light',
+              color: 'white',
+            },
+          }}
         >
           Reach Out
         </Button>
