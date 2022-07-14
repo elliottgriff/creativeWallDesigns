@@ -4,8 +4,8 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import val from './imgs/val.jpeg';
+import tile from './imgs/tile.jpeg';
 import stripes from './imgs/stripes.webp';
-import ladder from './imgs/ladder.webp';
 
 const item = {
   display: 'flex',
@@ -64,7 +64,7 @@ function Process() {
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>2.</Box>
-                <Box component="img" src={stripes} alt="stripes" sx={image} />
+                <Box component="img" src={tile} alt="tile" sx={image} />
                 <Typography variant="h5" align="center">
                   Choose a Design Gameplan
                 </Typography>
@@ -73,7 +73,7 @@ function Process() {
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>3.</Box>
-                <Box component="img" src={ladder} alt="ladder" sx={image} />
+                <Box component="img" src={stripes} alt="stripes" sx={image} />
                 <Typography variant="h5" align="center">
                   Decorate!
                 </Typography>

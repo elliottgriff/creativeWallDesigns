@@ -175,7 +175,7 @@ export default function ImageBoxes() {
           marked="center"
           align="center"
           component="h2"
-          sx={{ color: 'white' }}
+          sx={{ color: 'white', fontWeight: 'bold' }}
         >
           For all your Decorating Needs
         </Typography>

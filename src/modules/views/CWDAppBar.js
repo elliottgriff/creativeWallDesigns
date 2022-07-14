@@ -25,7 +25,7 @@ export default function CWDAppBar() {
               color: 'white',
               fontFamily: "'Raleway', sans-serif",
               '&:hover': {
-                color: 'pink',
+                color: 'primary.light',
               },
             }}
           >

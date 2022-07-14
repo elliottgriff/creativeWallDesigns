@@ -41,7 +41,7 @@ function Contact() {
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                bgcolor: 'primary.main',
+                bgcolor: 'primary.light',
                 py: 6,
                 px: 3,
               }}
@@ -96,11 +96,11 @@ function Contact() {
                   sx={{
                     width: '100%',
                     borderRadius: '5px',
-                    backgroundColor: 'primary.light',
+                    backgroundColor: 'primary.main',
                     color: 'white',
                     '&:hover': {
-                      backgroundColor: 'primary.light',
-                      color: 'primary.main',
+                      backgroundColor: 'primary.main',
+                      color: 'primary.light',
                     },
                   }}
                 >

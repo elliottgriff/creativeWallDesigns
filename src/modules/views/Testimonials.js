@@ -7,23 +7,38 @@ const Testimonials = () => {
   const testimonial = [
     {
       content:
-        'Over all though it was a great experience and we have had lots of great feedback. We already started promoting our next event and I have been approached by 4 other companies who want to know more about it as they want to use it for their own events.',
-      author: 'Sarah M., Director of Events',
+        'Creative Wall Design was amazing from start to finish! They answered all of my questions in a very timely manner. Robert did an amazing job wallpapering our accent wall. He was very prompt and professional. We love our wall!',
+      author: 'Susan B.',
     },
     {
       content:
-        'I cannot tell you how much we loved using this silent auction software. Everything was seamless…from set up, to bidding, to payment. We will absolutely use MyEvent next year.',
-      author: 'Sarah M., CCHS Foundation',
+        'I originally contacted Valerie for a wallpaper quote, but I realized I made a mistake with the paint color of my living room, so she came over and knew exactly what color the room needed. They were a pleasure to work with!',
+      author: 'Monica M.',
     },
     {
       content:
-        "I tried MyEvent instead of typical paper raffle tickets. The system was easy to set up online and people who couldn't attend the event were still able to enter the raffle, which was HUGE bump in revenue.",
-      author: 'Alexander B., Pan-Mass Challenge',
+        'The work was beautiful, we received design help, they were so professional, and were amazing to work with! We could not have asked for a better experience!',
+      author: 'Debra M.',
     },
     {
       content:
-        'MyEvent is a great way to bring in money for your Fund A Need. The 24/7 tech support allows you to feel confident, and the platform makes your Fund a Need so much easier to run. Well definitely be using MyEvent again.',
-      author: 'Amy C., One Less Orphan Fund',
+        'Quick to respond, level-headed enough to ask the detailed questions necessary to complete the job for our budding business. Would hire again for not only painting, but would consider for other jobs as well. Thank you!',
+      author: 'Angela M.',
+    },
+    {
+      content:
+        'This is a wonderful company to work with. They offer thoughtful suggestions, use only top qualities materials and they did a fantastic job.',
+      author: 'Brian H.',
+    },
+    {
+      content:
+        'I cannot say enough good things about working with these people. The job they did was absolutely amazing and they were a dream to work with.',
+      author: 'Linda M.',
+    },
+    {
+      content:
+        'Valerie and Robert were a delight to work with in every way! I would hire them again in a heartbeat and would advise anyone else to seek the out.',
+      author: 'Donna B.',
     },
   ];
 
@@ -43,8 +58,8 @@ const Testimonials = () => {
             <Carousel.Item>
               <Box
                 sx={{
-                  backgroundColor: 'primary.light',
-                  height: 350,
+                  backgroundColor: 'primary.main',
+                  height: 400,
                   borderRadius: '5rem',
                 }}
               >
@@ -53,7 +68,7 @@ const Testimonials = () => {
                     width: 200,
                     margin: 0,
                     position: 'absolute',
-                    top: '30%',
+                    top: '20%',
                     left: '50%',
                     msTransform: 'translate(-50%, -50%)',
                     transform: 'translate(-50%, -50%)',
@@ -62,7 +77,7 @@ const Testimonials = () => {
                   src={logo}
                   alt={index}
                 />
-                <Carousel.Caption>
+                <Carousel.Caption style={{ maxHeight: '65%' }}>
                   <h3>{t.author}</h3>
                   <p>{t.content}</p>
                 </Carousel.Caption>
