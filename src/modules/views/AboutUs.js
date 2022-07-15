@@ -6,6 +6,7 @@ import Typography from '../components/Typography';
 import kitchen from './imgs/kitchen.jpeg';
 import cabinet from './imgs/cabinet.jpeg';
 import flowers from './imgs/flowers.jpeg';
+import { createTheme, ThemeProvider } from '@mui/material';
 
 const item = {
   display: 'flex',
@@ -14,7 +15,35 @@ const item = {
   px: 5,
 };
 
-function ProductValues() {
+const imgStyle = {
+  my: 2,
+  height: 300,
+  width: {
+    xxs: '70%',
+    xs: '80%',
+    sm: '50%',
+    md: '120%',
+    lg: '120%',
+    xl: '120%',
+  },
+  outline: '1px solid white',
+  outlineOffset: '-4px',
+};
+
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xxs: 0, // small phone
+      xs: 300, // phone
+      sm: 600, // tablets
+      md: 900, // small laptop
+      lg: 1200, // desktop
+      xl: 1536, // large screens
+    },
+  },
+});
+
+function ProductValues(props) {
   return (
     <Box
       component="section"
@@ -30,12 +59,14 @@ function ProductValues() {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src={cabinet}
-                alt="cabinet"
-                sx={{ height: 300 }}
-              />
+              <ThemeProvider theme={theme}>
+                <Box
+                  component="img"
+                  src={cabinet}
+                  alt="cabinet"
+                  sx={imgStyle}
+                />
+              </ThemeProvider>
               <Typography variant="h6" sx={{ my: 5 }}>
                 30+ Years of Experience
               </Typography>
@@ -48,12 +79,14 @@ function ProductValues() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src={flowers}
-                alt="flowers"
-                sx={{ height: 300 }}
-              />
+              <ThemeProvider theme={theme}>
+                <Box
+                  component="img"
+                  src={flowers}
+                  alt="flowers"
+                  sx={imgStyle}
+                />
+              </ThemeProvider>
               <Typography variant="h6" sx={{ my: 5 }}>
                 Sophisticated Design
               </Typography>
@@ -65,12 +98,14 @@ function ProductValues() {
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src={kitchen}
-                alt="kitchen"
-                sx={{ height: 300 }}
-              />
+              <ThemeProvider theme={theme}>
+                <Box
+                  component="img"
+                  src={kitchen}
+                  alt="kitchen"
+                  sx={imgStyle}
+                />
+              </ThemeProvider>
               <Typography variant="h6" sx={{ my: 5 }}>
                 Fair Pricing
               </Typography>

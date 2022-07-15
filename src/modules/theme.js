@@ -1,11 +1,10 @@
-import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import { green, grey, red } from '@mui/material/colors';
 
 const rawTheme = createTheme({
   palette: {
     primary: {
       light: '#C8E3D4',
-      // main: '#F38181',
       main: '#87AAAA',
       dark: '#FCE38A',
     },

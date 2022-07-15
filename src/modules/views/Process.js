@@ -6,6 +6,7 @@ import Typography from '../components/Typography';
 import val from './imgs/val.jpeg';
 import tile from './imgs/tile.jpeg';
 import stripes from './imgs/stripes.webp';
+import { createTheme, ThemeProvider } from '@mui/material';
 
 const item = {
   display: 'flex',
@@ -21,12 +22,35 @@ const number = {
   fontWeight: 'medium',
 };
 
-const image = {
-  height: '20rem',
-  my: 4,
+const imgStyle = {
+  my: 2,
+  height: 300,
+  width: {
+    xxs: '70%',
+    xs: '80%',
+    sm: '50%',
+    md: '120%',
+    lg: '120%',
+    xl: '120%',
+  },
+  outline: '1px solid white',
+  outlineOffset: '-4px',
 };
 
-function Process() {
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xxs: 0, // small phone
+      xs: 300, // phone
+      sm: 600, // tablets
+      md: 900, // small laptop
+      lg: 1200, // desktop
+      xl: 1536, // large screens
+    },
+  },
+});
+
+function Process(props) {
   return (
     <Box
       component="section"
@@ -55,7 +79,9 @@ function Process() {
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>1.</Box>
-                <Box component="img" src={val} alt="val" sx={image} />
+                <ThemeProvider theme={theme}>
+                  <Box component="img" src={val} alt="val" sx={imgStyle} />
+                </ThemeProvider>
                 <Typography variant="h5" align="center">
                   Free Initial Consultation
                 </Typography>
@@ -64,7 +90,7 @@ function Process() {
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>2.</Box>
-                <Box component="img" src={tile} alt="tile" sx={image} />
+                <Box component="img" src={tile} alt="tile" sx={imgStyle} />
                 <Typography variant="h5" align="center">
                   Choose a Design Gameplan
                 </Typography>
@@ -73,7 +99,12 @@ function Process() {
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>3.</Box>
-                <Box component="img" src={stripes} alt="stripes" sx={image} />
+                <Box
+                  component="img"
+                  src={stripes}
+                  alt="stripes"
+                  sx={imgStyle}
+                />
                 <Typography variant="h5" align="center">
                   Decorate!
                 </Typography>
