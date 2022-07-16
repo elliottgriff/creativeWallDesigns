@@ -3,10 +3,10 @@ import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 
-const backgroundImage =
-  'https://imgs.search.brave.com/PEMlUTJBxoT8E5qr1qOEOuuh3BfUeAqeoceXFd4dKPQ/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/ZnJvbXRoZWZsb29y/c3VwLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOS8wOC80/NjQ4NzU3OF9MLmpw/Zw';
+export default function ProductHero(props) {
+  const backgroundImage =
+    'https://imgs.search.brave.com/PEMlUTJBxoT8E5qr1qOEOuuh3BfUeAqeoceXFd4dKPQ/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/ZnJvbXRoZWZsb29y/c3VwLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOS8wOC80/NjQ4NzU3OF9MLmpw/Zw';
 
-export default function ProductHero() {
   return (
     <section id="home">
       <ProductHeroLayout
@@ -33,9 +33,39 @@ export default function ProductHero() {
           color="inherit"
           align="center"
           variant="h5"
-          sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
+          sx={{
+            mb: 0,
+            mt: 5,
+            fontSize: {
+              xxs: '20px',
+              xs: '20px',
+              sm: '25px',
+              md: '25px',
+              lg: '25px',
+              xl: '25px',
+            },
+          }}
         >
-          Over 30 Years of Interior Decorating
+          Serving Fairfield and New Haven counties for over 30 years.
+        </Typography>
+        <Typography
+          color="inherit"
+          align="center"
+          variant="h5"
+          sx={{
+            mb: 4,
+            mt: 0,
+            fontSize: {
+              xxs: '20px',
+              xs: '20px',
+              sm: '25px',
+              md: '25px',
+              lg: '25px',
+              xl: '25px',
+            },
+          }}
+        >
+          We offer free estimates, color consultation and design services!
         </Typography>
         <Button
           color="primary"

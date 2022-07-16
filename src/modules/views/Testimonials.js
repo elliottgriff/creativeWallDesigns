@@ -33,7 +33,7 @@ const Testimonials = () => {
     },
     {
       content:
-        'I" cannot say enough good things about working with these people. The job they did was absolutely amazing and they were a dream to work with."',
+        '"I cannot say enough good things about working with these people. The job they did was absolutely amazing and they were a dream to work with."',
       author: 'Linda M.',
     },
     {
@@ -64,7 +64,7 @@ const Testimonials = () => {
           backgroundColor: '#87AAAA',
           height: {
             xxs: '50vh',
-            xs: '75vh',
+            xs: '85vh',
             sm: '80vh',
             md: '80vh',
             lg: '75vh',
@@ -87,14 +87,15 @@ const Testimonials = () => {
                   sx={{
                     backgroundColor: '#87AAAA',
                     height: {
-                      xxs: '30rem',
-                      xs: '26rem',
-                      sm: '22rem',
-                      md: '20rem',
-                      lg: '14rem',
-                      xl: '20rem',
+                      xxs: '40vh',
+                      xs: '65vh',
+                      sm: '50vh',
+                      md: '50vh',
+                      lg: '35vh',
+                      xl: '80vh',
                     },
                     borderRadius: '5rem',
+                    marginTop: '1rem',
                   }}
                 >
                   <h3 style={{ textAlign: 'center', fontSize: '65px' }}>
@@ -111,6 +112,7 @@ const Testimonials = () => {
                       style={{
                         maxHeight: '100%',
                         fontSize: '120%',
+                        marginTop: '1rem',
                       }}
                     >
                       {t.content}

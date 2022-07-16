@@ -27,10 +27,10 @@ const imgStyle = {
   height: 300,
   width: {
     xxs: '70%',
-    xs: '80%',
+    xs: '70%',
     sm: '50%',
-    md: '120%',
-    lg: '120%',
+    md: '110%',
+    lg: '110%',
     xl: '120%',
   },
   outline: '1px solid white',
@@ -59,7 +59,7 @@ function Process(props) {
       <Container
         sx={{
           mt: 5,
-          mb: 10,
+          mb: 5,
           position: 'relative',
           display: 'flex',
           flexDirection: 'column',
@@ -79,35 +79,35 @@ function Process(props) {
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>1.</Box>
+                <Typography variant="h5" align="center">
+                  Consult
+                </Typography>
                 <ThemeProvider theme={theme}>
                   <Box component="img" src={val} alt="val" sx={imgStyle} />
                 </ThemeProvider>
-                <Typography variant="h5" align="center">
-                  Free Initial Consultation
-                </Typography>
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>2.</Box>
-                <Box component="img" src={tile} alt="tile" sx={imgStyle} />
                 <Typography variant="h5" align="center">
-                  Choose a Design Gameplan
+                  Design
                 </Typography>
+                <Box component="img" src={tile} alt="tile" sx={imgStyle} />
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>3.</Box>
+                <Typography variant="h5" align="center">
+                  Decorate
+                </Typography>
                 <Box
                   component="img"
                   src={stripes}
                   alt="stripes"
                   sx={imgStyle}
                 />
-                <Typography variant="h5" align="center">
-                  Decorate!
-                </Typography>
               </Box>
             </Grid>
           </Grid>

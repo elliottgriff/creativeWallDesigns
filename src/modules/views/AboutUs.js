@@ -20,10 +20,10 @@ const imgStyle = {
   height: 300,
   width: {
     xxs: '70%',
-    xs: '80%',
+    xs: '70%',
     sm: '50%',
-    md: '120%',
-    lg: '120%',
+    md: '110%',
+    lg: '110%',
     xl: '120%',
   },
   outline: '1px solid white',
