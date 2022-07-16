@@ -2,7 +2,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import logo from './imgs/logo.png';
-import { createTheme, ThemeProvider } from '@mui/material';
+import { createTheme, ThemeProvider, Typography } from '@mui/material';
 
 const Testimonials = () => {
   const testimonial = [
@@ -88,7 +88,7 @@ const Testimonials = () => {
                     backgroundColor: '#87AAAA',
                     height: {
                       xxs: '40vh',
-                      xs: '65vh',
+                      xs: '62vh',
                       sm: '50vh',
                       md: '50vh',
                       lg: '35vh',
@@ -98,9 +98,12 @@ const Testimonials = () => {
                     marginTop: '1rem',
                   }}
                 >
-                  <h3 style={{ textAlign: 'center', fontSize: '65px' }}>
+                  <Typography
+                    variant="h2"
+                    style={{ textAlign: 'center', fontSize: '65px' }}
+                  >
                     {t.author}
-                  </h3>
+                  </Typography>
                   <Carousel.Caption
                     style={{
                       position: 'absolute',
@@ -108,15 +111,23 @@ const Testimonials = () => {
                       transform: 'translate(0, -50%)',
                     }}
                   >
-                    <h5
-                      style={{
+                    <Typography
+                      variant="h5"
+                      sx={{
                         maxHeight: '100%',
                         fontSize: '120%',
-                        marginTop: '1rem',
+                        marginTop: {
+                          xxs: '0',
+                          xs: '0',
+                          sm: '1rem',
+                          md: '1rem',
+                          lg: '1rem',
+                          xl: '1rem',
+                        },
                       }}
                     >
                       {t.content}
-                    </h5>
+                    </Typography>
                   </Carousel.Caption>
                 </Box>
               </Carousel.Item>

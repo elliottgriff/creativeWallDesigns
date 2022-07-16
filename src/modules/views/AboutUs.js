@@ -19,8 +19,8 @@ const imgStyle = {
   my: 2,
   height: 300,
   width: {
-    xxs: '70%',
-    xs: '70%',
+    xxs: '90%',
+    xs: '90%',
     sm: '50%',
     md: '110%',
     lg: '110%',
